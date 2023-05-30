@@ -105,6 +105,7 @@ class Chrome {
       // Since we are using a temp profile, disable features that slow the
       // Chrome launch.
       if (!signIn) '--disable-extensions',
+      '--disable-web-security',
       '--disable-popup-blocking',
       if (!signIn) '--bwsi',
       '--no-first-run',
